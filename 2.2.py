@@ -1,13 +1,13 @@
 def solution(s):
     to_salute = 0
-    stack = []
+    counter = 0  # Should have been a counter
     for i, ch in enumerate(s):
         if ch == "-":
             continue
         if ch == ">":
-            stack.append(ch)
+            counter += 1
         else:
-            to_salute += len(stack)
+            to_salute += counter
     return to_salute*2
 
 
