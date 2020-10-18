@@ -1,4 +1,6 @@
 .vscode/
 
+*.bak
+
 scratchpad.py
 single_use_referral.txt
