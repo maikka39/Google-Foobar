@@ -11,6 +11,11 @@ def solution(s):
     return to_salute*2
 
 
-print(solution(">----<"), solution(">----<") == 2)
-print(solution("<<>><"), solution("<<>><") == 4)
-print(solution("--->->-<><-->-"), solution("--->-><-><-->-") == 10)
+s1 = solution(">----<")
+print (s1 == 2, s1)
+
+s2 = solution("<<>><")
+print(s2 == 4, s2)
+
+s3 = solution("--->->-<><-->-")
+print(s3 == 10, s3)

@@ -28,22 +28,22 @@ def solution(m, f):
 
 
 s1 = solution('4', '7')
-print(s1, s1 == "4")
+print(s1 == "4", s1)
 
 s2 = solution('2', '1')
-print(s2, s2 == "1")
+print(s2 == "1", s2)
 
 s3 = solution('2', '4')
-print(s3, s3 == "impossible")
+print(s3 == "impossible", s3)
 
 s4 = solution(1, 10**50)
-print(s4, s4 == str(10**50 - 1))
+print(s4 == str(10**50 - 1), s4)
 
 s5 = solution(1, 1)
-print(s5, s5 == str(0))
+print(s5 == str(0), s5)
 
 s6 = solution(2, 2)
-print(s6, s6 == "impossible")
+print(s6 == "impossible", s6)
 
 s7 = solution(5000, 15000)
-print(s7, s7 == "impossible")
+print(s7 == "impossible", s7)
