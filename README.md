@@ -30,3 +30,4 @@ At this point, I was offered to send my solutions to a Google recruiter. Checkou
 ### Level 4
 
 - [Running with Bunnies](https://github.com/maikka39/Google-Foobar/tree/master/Level%204/Running%20with%20Bunnies)
+- [Bringing a Gun to a Trainer Fight](https://github.com/maikka39/Google-Foobar/tree/master/Level%204/Bringing%20a%20Gun%20to%20a%20Trainer%20Fight)
