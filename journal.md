@@ -25,3 +25,7 @@ There are a lot of difficult things about being undercover as Commander Lambda's
 This was supposed to be an infiltration-and-rescue mission, not a repeat of the Great Cowland Station fiasco! You didn't think rescuing bunnies would involve this much running.
 
 Oh no! You escaped Commander Lambda's exploding space station -- but so did the Commander, and Lambda is definitely not happy with you. Lambda is chasing you in a heavily-armed starfighter, while you and the bunny workers are stuck in these lumbering escape pods. It'll take all your wits and cleverness to escape such a hare-y situation, so you'd better hop to it!
+
+Traveling through a nebula is a really bad idea, but with Commander Lambda hot on your tail, you don't have many options. Hopefully you can lose them once you're inside!
+
+With one last roar of the escape pod's engines, you and your bunny companions jump to lightspeed. Congratulations! You've destroyed the LAMBCHOP, relieved the bunnies, gotten Commander Lambda off your tail, and saved the galaxy. Time for a little rest and relaxation back on Bunny Planet. Pat yourself on the back -- you've earned it!

@@ -10,6 +10,8 @@ Checkout [journal.md](https://github.com/maikka39/Google-Foobar/blob/master/jour
 
 Inside each level is a challenge folder with a problem file describing the challenge and constraints, and my solution to the challenge.
 
+## Levels
+
 ### Level 1
 
 - [Prison Labor Dodgers](https://github.com/maikka39/Google-Foobar/tree/master/Level%201/Prison%20Labor%20Dodgers)
@@ -31,3 +33,7 @@ At this point, I was offered to send my solutions to a Google recruiter. Checkou
 
 - [Running with Bunnies](https://github.com/maikka39/Google-Foobar/tree/master/Level%204/Running%20with%20Bunnies)
 - [Bringing a Gun to a Trainer Fight](https://github.com/maikka39/Google-Foobar/tree/master/Level%204/Bringing%20a%20Gun%20to%20a%20Trainer%20Fight)
+
+### Level 5
+
+- [Disorderly Escape](https://github.com/maikka39/Google-Foobar/tree/master/Level%205/Disorderly%20Escape)
