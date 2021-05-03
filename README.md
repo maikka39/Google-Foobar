@@ -37,3 +37,27 @@ At this point, I was offered to send my solutions to a Google recruiter. Checkou
 ### Level 5
 
 - [Disorderly Escape](https://github.com/maikka39/Google-Foobar/tree/master/Level%205/Disorderly%20Escape)
+
+## End
+
+In the end it showed me a rabbit animation and I got an encrypted message:
+
+```xml
+<encrypted>
+FkYaHggCVkoeRklRS0ZUSwgAHUxHQRRaAg0FDgoGRlxKQVNLTARATQgEBA4PRh8ZSgQPDQQTR0pK QVNLTAhdWh8EDQIJDVYeQUFOCggJWlwbBAQOBRUUGVdBTh4FDVxaBgQNTEdBFEsMAwsCHxIUGVdB ThgKB1YeQUFODQQOFBlXQU4cAg8SHhA= 
+</encrypted>
+```
+
+It looks `base64` encoded but when we decode it we just get garbage data. Then I saw the little hint below:
+
+> For **your** eyes only!
+
+And as it turns out, you just have to decrypt the output from the `base64` decoded string using a simple `xor` with your username.
+
+I did this easily using [CyberChef](https://gchq.github.io/CyberChef/#recipe=From_Base64('A-Za-z0-9%2B/%3D',true)XOR(%7B'option':'UTF8','string':'maikka39'%7D,'Standard',false)&input=RmtZYUhnZ0NWa29lUmtsUlMwWlVTd2dBSFV4SFFSUmFBZzBGRGdvR1JseEtRVk5MVEFSQVRRZ0VCQTRQUmg4WlNnUVBEUVFUUjBwSyBRVk5MVEFoZFdoOEVEUUlKRFZZZVFVRk9DZ2dKV2x3YkJBUU9CUlVVR1ZkQlRoNEZEVnhhQmdRTlRFZEJGRXNNQXdzQ0h4SVVHVmRCIFRoZ0tCMVllUVVGT0RRUU9GQmxYUVU0Y0FnOFNIaEE9).
+
+This gave me the following output:
+
+```js
+{'success' : 'great', 'colleague' : 'esteemed', 'efforts' : 'incredible', 'achievement' : 'unlocked', 'rabbits' : 'safe', 'foo' : 'win!'}
+```
