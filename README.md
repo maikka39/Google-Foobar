@@ -10,7 +10,7 @@ Checkout [journal.md](https://github.com/maikka39/Google-Foobar/blob/master/jour
 
 Inside each level is a challenge folder with a problem file describing the challenge and constraints, and my solution to the challenge.
 
-## Levels
+## Challenges I got
 
 ### Level 1
 
@@ -37,6 +37,14 @@ At this point, I was offered to send my solutions to a Google recruiter. Checkou
 ### Level 5
 
 - [Disorderly Escape](https://github.com/maikka39/Google-Foobar/tree/master/Level%205/Disorderly%20Escape)
+
+## Other levels
+
+These are my solutions to levels I didn't personaly get, but friends or acquaintances did.
+
+### Level 2
+
+- [Don't Get Volunteered!](https://github.com/maikka39/Google-Foobar/tree/master/Level%202/Don't%20Get%20Volunteered!)
 
 ## End
 
