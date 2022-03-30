@@ -40,11 +40,15 @@ At this point, I was offered to send my solutions to a Google recruiter. Checkou
 
 ## Other levels
 
-These are my solutions to levels I didn't personaly get, but friends or acquaintances did.
+These are my solutions to levels I didn't personally get, but friends or acquaintances did or I requested them later.
 
 ### Level 2
 
 - [Don't Get Volunteered!](https://github.com/maikka39/Google-Foobar/tree/master/Level%202/Don't%20Get%20Volunteered!)
+
+### Level 5
+
+- [Dodge the Lasers!](https://github.com/maikka39/Google-Foobar/tree/master/Level%205/Dodge%20the%20Lasers!)
 
 ## End
 
