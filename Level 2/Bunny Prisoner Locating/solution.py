@@ -1,3 +1,5 @@
+#!/usr/bin/env python2
+
 def solution(x, y):
     horizontal = (x*(x+1))//2
     vertical = ((y+x-2)*(y+x-1))//2 - ((x-1)*(x))//2

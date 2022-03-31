@@ -1,5 +1,6 @@
-from math import factorial
+#!/usr/bin/env python2
 from collections import Counter
+from math import factorial
 
 
 def gcd(b, a):
@@ -29,9 +30,8 @@ def coefficient_factor(partition, n):
 
 def solution(width, height, states):
     n = 0
-    height_partitions = tuple(partitions(height))
     for width_partition in partitions(width):
-        for height_partition in height_partitions:
+        for height_partition in tuple(partitions(height)):
             width_factor = coefficient_factor(width_partition, width)
             height_factor = coefficient_factor(height_partition, height)
 

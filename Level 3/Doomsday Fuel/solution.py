@@ -1,3 +1,5 @@
+#!/usr/bin/env python2
+
 def gcd(a, b):
     while b != 0:
         a, b = b, a % b
@@ -36,10 +38,8 @@ def solution(matrix):
     absorbing_states = [i for i, item in enumerate(sums) if item == 0]
     transient_states = list((set(range(size)) - set(absorbing_states)))
 
-    for i in range(len(transient_states)):
-        index1 = transient_states[i]
-        for j in range(len(transient_states)):
-            index2 = transient_states[j]
+    for index1 in transient_states:
+        for index2 in transient_states:
             matrix[index2] = combine(
                 matrix[index2], index2, matrix[index1], index1)
 

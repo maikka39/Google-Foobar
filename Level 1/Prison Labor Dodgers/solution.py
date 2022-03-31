@@ -1,8 +1,10 @@
-def solution(x, y):
-    setx = set(x)
-    sety = set(y)
+#!/usr/bin/env python2
 
-    return list(setx-sety) + list(sety-setx)
+def solution(x, y):
+    set_x = set(x)
+    set_y = set(y)
+
+    return list(set_x-set_y) + list(set_y-set_x)
 
 
 s1 = solution([13, 5, 6, 2, 5], [5, 2, 5, 13])

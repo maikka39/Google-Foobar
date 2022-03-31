@@ -1,9 +1,9 @@
+#!/usr/bin/env python2
 from collections import deque
 
 
 def solution(src, dest):
     source = (src, 0)
-    dest = dest
 
     moves = [6, -6, 10, -10, 15, -15, 17, -17]
 

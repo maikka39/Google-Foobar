@@ -1,5 +1,7 @@
-def cost_from_start(matrix, heigth, width, start_x, start_y):
-    cost = [[None for _ in range(width)] for _ in range(heigth)]
+#!/usr/bin/env python2
+
+def cost_from_start(matrix, height, width, start_x, start_y):
+    cost = [[None for _ in range(width)] for _ in range(height)]
 
     cost[start_x][start_y] = 1
 
@@ -12,7 +14,7 @@ def cost_from_start(matrix, heigth, width, start_x, start_y):
             neighbor_x = x + neighbor[0]
             neighbor_y = y + neighbor[1]
 
-            if 0 <= neighbor_x < heigth and 0 <= neighbor_y < width and cost[neighbor_x][neighbor_y] is None:
+            if 0 <= neighbor_x < height and 0 <= neighbor_y < width and cost[neighbor_x][neighbor_y] is None:
                 cost[neighbor_x][neighbor_y] = cost[x][y] + 1
 
                 if matrix[neighbor_x][neighbor_y] == 1:

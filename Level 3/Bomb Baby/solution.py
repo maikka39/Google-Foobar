@@ -1,27 +1,29 @@
-def solution(m, f):
-    m = int(m)
-    f = int(f)
+#!/usr/bin/env python2
 
-    if (m > 1 or f > 1) and m == f:
+def solution(m_count, f_count):
+    m_count = int(m_count)
+    f_count = int(f_count)
+
+    if (m_count > 1 or f_count > 1) and m_count == f_count:
         return "impossible"
 
     steps = 0
 
-    while m >= 1 and f >= 1 and not m == f == 1:
-        if f >= m:
-            multiplier = (f // m)
-            if m == 1:
+    while m_count >= 1 and f_count >= 1 and not m_count == f_count == 1:
+        if f_count >= m_count:
+            multiplier = (f_count // m_count)
+            if m_count == 1:
                 multiplier -= 1
-            f -= m * multiplier
+            f_count -= m_count * multiplier
         else:
-            multiplier = (m // f)
-            if f == 1:
+            multiplier = (m_count // f_count)
+            if f_count == 1:
                 multiplier -= 1
-            m -= f * multiplier
+            m_count -= f_count * multiplier
 
         steps += multiplier
 
-    if m != 1 or f != 1:
+    if m_count != 1 or f_count != 1:
         return "impossible"
 
     return str(steps)

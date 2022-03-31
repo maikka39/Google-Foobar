@@ -1,3 +1,4 @@
+#!/usr/bin/env python2
 from decimal import Decimal, getcontext
 
 getcontext().prec = 102

@@ -1,4 +1,5 @@
-from math import sqrt, ceil
+#!/usr/bin/env python2
+from math import ceil, sqrt
 
 
 def dist(a, b):
@@ -25,22 +26,26 @@ def simplify_fraction(a, b):
     return a, b
 
 
-def get_vectors(dimentions, start_pos, target_pos, max_distance):
-    max_distance = float(max_distance)  # For python2 support (python2 defaults to integer devision)
-    targets = dict()
+def get_vectors(dimensions, start_pos, target_pos, max_distance):
+    max_distance = float(max_distance)
+    targets = {}
 
-    x_scale = int(ceil(max_distance / dimentions[0]))+1
-    y_scale = int(ceil(max_distance / dimentions[1]))+1
-    x_range = dimentions[0] * x_scale
-    y_range = dimentions[1] * y_scale
-    current_x = -x_range + (target_pos[0] if x_scale % 2 == 0 else dimentions[0] - target_pos[0])
-    for current_right_border in range(-x_range + dimentions[0], x_range + 1, dimentions[0]):
-        current_y = -y_range + (target_pos[1] if y_scale % 2 == 0 else dimentions[1] - target_pos[1])
-        for current_top_border in range(-y_range + dimentions[1], y_range + 1, dimentions[1]):
+    x_scale = int(ceil(max_distance / dimensions[0]))+1
+    y_scale = int(ceil(max_distance / dimensions[1]))+1
+    x_range = dimensions[0] * x_scale
+    y_range = dimensions[1] * y_scale
+    current_x = -x_range + \
+        (target_pos[0] if x_scale % 2 == 0 else dimensions[0] - target_pos[0])
+    for current_right_border in range(-x_range + dimensions[0], x_range + 1, dimensions[0]):
+        current_y = -y_range + \
+            (target_pos[1] if y_scale %
+             2 == 0 else dimensions[1] - target_pos[1])
+        for current_top_border in range(-y_range + dimensions[1], y_range + 1, dimensions[1]):
             pos = (current_x, current_y)
             distance = dist(start_pos, pos)
             if distance <= max_distance:
-                frac = simplify_fraction(current_x - start_pos[0], current_y - start_pos[1])
+                frac = simplify_fraction(
+                    current_x - start_pos[0], current_y - start_pos[1])
                 if distance < targets.get(frac, float('inf')):
                     targets[frac] = distance
             current_y += (current_top_border - current_y) * 2
@@ -49,18 +54,17 @@ def get_vectors(dimentions, start_pos, target_pos, max_distance):
     return targets
 
 
-def solution(dimentions, start_pos, target_pos, distance):
-    hit_target = get_vectors(dimentions, start_pos, target_pos, distance)
-    hit_self = get_vectors(dimentions, start_pos, start_pos, distance)
+def solution(dimensions, start_pos, target_pos, distance):
+    hit_target = get_vectors(dimensions, start_pos, target_pos, distance)
+    hit_self = get_vectors(dimensions, start_pos, start_pos, distance)
 
-    bearings = []
-
-    for bearing in hit_target:
-        if bearing not in hit_self:
-            bearings.append(bearing)
-        else:
-            if hit_target[bearing] < hit_self[bearing]:
-                bearings.append(bearing)
+    bearings = [
+        bearing
+        for bearing in hit_target
+        if bearing in hit_self
+        and hit_target[bearing] < hit_self[bearing]
+        or bearing not in hit_self
+    ]
 
     return len(bearings)
 

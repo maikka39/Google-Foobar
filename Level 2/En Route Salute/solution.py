@@ -1,11 +1,13 @@
-def solution(s):
+#!/usr/bin/env python2
+
+def solution(input_str):
     to_salute = 0
     counter = 0
 
-    for i, ch in enumerate(s):
-        if ch == "-":
+    for char in input_str:
+        if char == "-":
             continue
-        if ch == ">":
+        if char == ">":
             counter += 1
         else:
             to_salute += counter
@@ -14,7 +16,7 @@ def solution(s):
 
 
 s1 = solution(">----<")
-print (s1 == 2, s1)
+print(s1 == 2, s1)
 
 s2 = solution("<<>><")
 print(s2 == 4, s2)
